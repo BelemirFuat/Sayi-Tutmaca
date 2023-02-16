@@ -1,0 +1,480 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  ActiveControl = Edit1
+  Caption = 'Form2'
+  ClientHeight = 469
+  ClientWidth = 408
+  Fill.Kind = Gradient
+  Fill.Gradient.Points = <
+    item
+      Color = xFF6C0052
+      Offset = 0.000000000000000000
+    end
+    item
+      Color = xFF00366F
+      Offset = 1.000000000000000000
+    end>
+  Fill.Gradient.StartPosition.Y = 0.456255674362182600
+  Fill.Gradient.StopPosition.X = 1.000000000000000000
+  Fill.Gradient.StopPosition.Y = 0.543744325637817400
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  OnCloseQuery = FormCloseQuery
+  DesignerMasterStyle = 3
+  object Text9: TText
+    Align = Scale
+    Opacity = 0.000000000000000000
+    Position.X = 64.000000000000000000
+    Position.Y = 136.000000000000000000
+    Size.Width = 305.000000000000000000
+    Size.Height = 97.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Comic Sans MS'
+    TextSettings.Font.Size = 20.000000000000000000
+    TextSettings.Font.Style = [fsBold]
+    TextSettings.FontColor = claWhite
+    object FloatAnimation7: TFloatAnimation
+      Duration = 2.000000000000000000
+      OnProcess = FloatAnimation7Process
+      OnFinish = FloatAnimation7Finish
+      PropertyName = 'Position.Y'
+      StartValue = 128.000000000000000000
+      StopValue = 0.000000000000000000
+    end
+    object FloatAnimation8: TFloatAnimation
+      Duration = 1.000000000000000000
+      PropertyName = 'Opacity'
+      StartValue = 0.000000000000000000
+      StopValue = 1.000000000000000000
+    end
+  end
+  object Text7: TText
+    Align = Scale
+    Opacity = 0.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Arial'
+    TextSettings.Font.Size = 20.000000000000000000
+    TextSettings.FontColor = claWhite
+    object FloatAnimation3: TFloatAnimation
+      Duration = 2.000000000000000000
+      OnFinish = Fl
+      PropertyName = 'Position.Y'
+      StartValue = 0.000000000000000000
+      StartFromCurrent = True
+      StopValue = 0.000000000000000000
+    end
+    object FloatAnimation4: TFloatAnimation
+      Duration = 1.000000000000000000
+      OnFinish = FloatAnimation4Finish
+      PropertyName = 'Opacity'
+      StartValue = 0.000000000000000000
+      StopValue = 1.000000000000000000
+    end
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Align = Scale
+    TabOrder = 0
+    KeyboardType = NumberPad
+    TextSettings.Font.Family = 'Arial'
+    Position.X = 72.000000000000000000
+    Position.Y = 152.000000000000000000
+    Size.Width = 233.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    TextPrompt = 'Say'#305'y'#305' Tahmin Edin'
+    StyledSettings = [Size, Style]
+    Caret.Color = claSteelblue
+  end
+  object Button2: TButton
+    Align = Scale
+    Default = True
+    StyledSettings = [Size, Style]
+    Position.X = 312.000000000000000000
+    Position.Y = 136.000000000000000000
+    Size.Width = 48.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'donetoolbutton'
+    TabOrder = 1
+    Text = 'Kontrol Et'
+    TextSettings.Font.Family = 'Arial'
+    TextSettings.FontColor = claWhite
+    OnClick = Button2Click
+  end
+  object Text2: TText
+    Align = Scale
+    Opacity = 0.000000000000000000
+    Position.X = 360.000000000000000000
+    Position.Y = 112.000000000000000000
+    Text = '+1'
+    TextSettings.Font.Family = 'Arial'
+    TextSettings.Font.Size = 20.000000000000000000
+    TextSettings.FontColor = claWhite
+    object FloatAnimation1: TFloatAnimation
+      Duration = 2.000000000000000000
+      OnFinish = Fl
+      PropertyName = 'Position.Y'
+      StartValue = 112.000000000000000000
+      StopValue = 56.000000000000000000
+    end
+    object FloatAnimation2: TFloatAnimation
+      Duration = 1.000000000000000000
+      PropertyName = 'Opacity'
+      StartValue = 0.000000000000000000
+      StopValue = 1.000000000000000000
+    end
+  end
+  object Text3: TText
+    Align = Scale
+    Position.X = 360.000000000000000000
+    Text = '1'
+    TextSettings.Font.Family = 'Arial'
+    TextSettings.Font.Size = 20.000000000000000000
+    TextSettings.Font.Style = [fsBold]
+    TextSettings.FontColor = claWhite
+  end
+  object Label2: TLabel
+    Align = Scale
+    StyledSettings = [Family, Size, Style]
+    Position.X = 272.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 81.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.FontColor = claWhite
+    Text = 'Level'
+  end
+  object Button3: TButton
+    Align = Scale
+    Default = True
+    Enabled = False
+    Position.X = 360.000000000000000000
+    Position.Y = 136.000000000000000000
+    Size.Width = 48.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'nexttoolbutton'
+    TabOrder = 8
+    Text = 'Button3'
+    OnClick = Button3Click
+  end
+  object Timer1: TTimer
+    Interval = 1
+    OnTimer = Timer1Timer
+    Left = 112
+    Top = 312
+  end
+  object Label1: TLabel
+    Align = Scale
+    StyledSettings = [Family, Size, Style]
+    Position.X = 272.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 81.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.FontColor = claWhite
+    Text = 'Deneme'
+  end
+  object Text1: TText
+    Align = Scale
+    Position.X = 360.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 48.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Text = '0'
+    TextSettings.Font.Family = 'Arial'
+    TextSettings.Font.Size = 20.000000000000000000
+    TextSettings.FontColor = claWhite
+  end
+  object Label3: TLabel
+    Align = Scale
+    StyledSettings = [Family, Size, Style]
+    Position.X = 88.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 137.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.FontColor = claWhite
+    Text = 'B'#246'l'#252'm Puan'#305
+  end
+  object Text4: TText
+    Align = Scale
+    Size.Width = 89.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Text = '0'
+    TextSettings.Font.Family = 'Arial'
+    TextSettings.Font.Size = 20.000000000000000000
+    TextSettings.FontColor = claWhite
+  end
+  object Label4: TLabel
+    Align = Scale
+    StyledSettings = [Family, Size, Style]
+    Position.X = 88.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 137.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.FontColor = claWhite
+    Text = 'Nihai Puan'
+  end
+  object Text5: TText
+    Align = Scale
+    Position.Y = 56.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Text = '0'
+    TextSettings.Font.Family = 'Arial'
+    TextSettings.Font.Size = 20.000000000000000000
+    TextSettings.FontColor = claWhite
+  end
+  object Text8: TText
+    Align = Scale
+    Position.Y = 104.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Arial'
+    TextSettings.Font.Size = 20.000000000000000000
+    TextSettings.FontColor = claWhite
+    object FloatAnimation5: TFloatAnimation
+      Duration = 2.000000000000000000
+      OnFinish = FloatAnimation5Finish
+      PropertyName = 'Position.Y'
+      StartValue = 112.000000000000000000
+      StartFromCurrent = True
+      StopValue = 56.000000000000000000
+    end
+    object FloatAnimation6: TFloatAnimation
+      Duration = 1.000000000000000000
+      PropertyName = 'Opacity'
+      StartValue = 0.000000000000000000
+      StopValue = 1.000000000000000000
+    end
+  end
+  object Button1: TButton
+    StaysPressed = True
+    Align = Scale
+    Position.X = 20.000000000000000000
+    Position.Y = 138.000000000000000000
+    Size.Width = 48.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'infotoolbutton'
+    TabOrder = 11
+    Text = 'Button1'
+    OnClick = Button1Click
+  end
+  object TabControl1: TTabControl
+    Align = Scale
+    FullSize = True
+    Position.Y = 473.000000000000000000
+    Size.Width = 409.000000000000000000
+    Size.Height = 273.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 12
+    TabPosition = PlatformDefault
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 136.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Level Ge'#231'mi'#351'i'
+      object Memo1: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        ReadOnly = True
+        TextSettings.WordWrap = True
+        Align = Client
+        Size.Width = 409.000000000000000000
+        Size.Height = 224.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Viewport.Width = 401.000000000000000000
+        Viewport.Height = 216.000000000000000000
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 137.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Oyun Bilgileri'
+      object Memo2: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Lines.Strings = (
+          
+            'G'#246'reviniz her levelde oyunun akl'#305'ndan tuttu'#287'u 1 ile 10'#39'nun kuvve' +
+            'tleri aras'#305'ndaki say'#305'y'#305' bulmak.'
+          ''
+          
+            '('#214'rne'#287'in 1. seviyede 0 ile 10'#39'nun 0. kuvveti yani 1 aras'#305'nda bir' +
+            ' tam say'#305' tutacakt'#305'r. 2.seviyede 0 ile 10'#39'nun 1.kuvveti yani 10 ' +
+            'aras'#305'nda bir say'#305' tutacakt'#305'r. sonunda kadar b'#246'yle gidiyor:))'
+          ''
+          
+            'E'#287'er say'#305' tahmininizden b'#252'y'#252'k ve fark'#305' 1000'#39'den fazla ise, "Elin' +
+            'i korkak al'#305#351't'#305'rma derim ben"; fark 1000 ile 100 aras'#305'nda ise,'
+          
+            '"Az daha fazla"; fark 100'#39'den az ise "Biraz daha art'#305'rman laz'#305'm ' +
+            'bence" diyecektir. '
+          ''
+          
+            'E'#287'er tahmininiz say'#305'dan b'#252'y'#252'k ve fark'#305' 1000'#39'den fazla ise, "Az a' +
+            't da civcivler yesin"; fark 1000 ile 100 aras'#305'nda ise, '
+          
+            '"O sanki biraz fazla oldu"; fark 100'#39'den az ise "Birazdan azaltm' +
+            'an laz'#305'm bence" diyecektir.'
+          ''
+          
+            #350'imdilik sadece 10 b'#246'l'#252'm var. ileride art'#305'r'#305'r'#305'z belki:)) iyi oyu' +
+            'nlar ve iyi '#351'anslar.'
+          ''
+          
+            'Zorluk seviyesi ise se'#231'ti'#287'iniz say'#305' ile b'#246'l'#252'm'#252'n icap etti'#287'i say'#305 +
+            'y'#305' '#231'arpar. Yani 2.seviyede 3.zorluk seviyesinde 0 ve 100 yerine ' +
+            '0 ve 300 aras'#305'nda say'#305' bulman'#305'z gerekir.')
+        ReadOnly = True
+        TextSettings.WordWrap = True
+        Align = Client
+        Size.Width = 409.000000000000000000
+        Size.Height = 224.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Viewport.Width = 396.000000000000000000
+        Viewport.Height = 216.000000000000000000
+      end
+    end
+    object Tabitem3: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 136.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Ayarlar'
+      object ListBox1: TListBox
+        Align = Client
+        Size.Width = 409.000000000000000000
+        Size.Height = 224.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        DisableFocusEffect = True
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        Viewport.Width = 409.000000000000000000
+        Viewport.Height = 224.000000000000000000
+        object ListBoxGroupFooter1: TListBoxGroupFooter
+          Size.Width = 409.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = '@belemirfuat 2021'
+        end
+      end
+    end
+    object FloatAnimation9: TFloatAnimation
+      Duration = 0.500000000000000000
+      OnFinish = FloatAnimation9Finish
+      PropertyName = 'Position.Y'
+      StartValue = 0.000000000000000000
+      StartFromCurrent = True
+      StopValue = 200.000000000000000000
+    end
+  end
+  object Timer2: TTimer
+    Interval = 100
+    OnTimer = Timer2Timer
+    Left = 312
+    Top = 400
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'FMX'
+    Left = 32
+    Top = 440
+  end
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      
+        'Database=C:\Documents and Settings\muhammed.USER\Belgelerim\Emba' +
+        'rcadero\Studio\Projects\say'#305'tutmaca\say'#305'tutmacadb.db'
+      'LockingMode=Normal'
+      'DriverID=SQLite')
+    Connected = True
+    LoginPrompt = False
+    BeforeConnect = FDConnection1BeforeConnect
+    Left = 240
+    Top = 408
+  end
+  object BindSourceDB1: TBindSourceDB
+    ScopeMappings = <>
+    Left = 304
+    Top = 320
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 4
+    Top = 413
+    object LinkPropertyToFieldText2: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB2
+      FieldName = 'level'
+      Component = Text3
+      ComponentProperty = 'Text'
+    end
+    object LinkPropertyToFieldText: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB2
+      FieldName = 'nihaipuan'
+      Component = Text5
+      ComponentProperty = 'Text'
+    end
+    object LinkPropertyToFieldText3: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB2
+      FieldName = 'denemesayisi'
+      Component = Text1
+      ComponentProperty = 'Text'
+    end
+  end
+  object FDQuery1: TFDQuery
+    Active = True
+    BeforeInsert = FDQuery1BeforeInsert
+    Connection = FDConnection1
+    SQL.Strings = (
+      'select * from ensonkiilerleme')
+    Left = 272
+    Top = 232
+  end
+  object BindSourceDB2: TBindSourceDB
+    DataSet = FDQuery1
+    ScopeMappings = <>
+    Left = 192
+    Top = 224
+  end
+end
